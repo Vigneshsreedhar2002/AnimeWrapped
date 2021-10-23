@@ -15,6 +15,12 @@ import { ComponentsComponent } from "./components.component";
 import { NotificationComponent } from "./notification/notification.component";
 import { NgbdModalComponent } from "./modal/modal.component";
 import { NgbdModalContent } from "./modal/modal.component";
+import { StatisticsComponent } from './statistics/statistics.component';
+import { VisualizationsComponent } from './visualizations/visualizations.component';
+import { DescriptionComponent } from './description/description.component';
+import { SuggestionsComponent } from './suggestions/suggestions.component';
+import { HottakesComponent } from './hottakes/hottakes.component';
+import { NewsuggestionsComponent } from './newsuggestions/newsuggestions.component';
 
 @NgModule({
   imports: [
@@ -35,6 +41,12 @@ import { NgbdModalContent } from "./modal/modal.component";
     NotificationComponent,
     NgbdModalComponent,
     NgbdModalContent,
+    StatisticsComponent,
+    VisualizationsComponent,
+    DescriptionComponent,
+    SuggestionsComponent,
+    HottakesComponent,
+    NewsuggestionsComponent,
   ],
   entryComponents: [NgbdModalContent],
   exports: [ComponentsComponent],
