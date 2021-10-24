@@ -2591,7 +2591,7 @@ textarea.form-control {
 .card .card-block .card-description + .card-footer {
   padding-top: 10px;
 }
-.card.no-transition:hover, .card.card-register:hover, .card.page-carousel:hover {
+.card.no-transition:hover, .card.card-statistics:hover, .card.page-carousel:hover {
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
   transform: none;
   -webkit-transform: none;
@@ -2645,7 +2645,7 @@ textarea.form-control {
   margin-top: 100px;
 }
 
-.card-register {
+.card-statistics {
   background-color: #FF8F5E;
   border-radius: 8px;
   color: #fff;
@@ -2655,28 +2655,28 @@ textarea.form-control {
   padding: 30px;
   z-index: 1;
 }
-.card-register .social-line .btn {
+.card-statistics .social-line .btn {
   margin-top: 0;
 }
 
-.section-image .card-register {
+.section-image .card-statistics {
   margin-top: 0;
 }
 
-.card-register label {
+.card-statistics label {
   margin-top: 15px;
 }
 
-.card-register .title {
+.card-statistics .title {
   color: #B33C12;
   text-align: center;
 }
 
-.card-register .btn {
+.card-statistics .btn {
   margin-top: 30px;
 }
 
-.card-register .forgot {
+.card-statistics .forgot {
   text-align: center;
 }
 
