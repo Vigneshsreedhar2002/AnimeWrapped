@@ -1,0 +1,37 @@
+import { Injectable } from "@angular/core";
+
+const ACCESS_TOKEN =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ2YjQ5YzQ4ZDY1ODA3OGRkOTNmMTJiYTEyNjkyNjg3ZmQ0YmU4NDhhNzFiMGIyNWVmZjNkNDZjM2NmOTg2YTIwMTMwZWJjMDJhZmIxMTg4In0.eyJhdWQiOiJmZWU3YmUwODg4OGIxZTliOWUxNDM2NWQ0NjBlNmZkYiIsImp0aSI6IjQ2YjQ5YzQ4ZDY1ODA3OGRkOTNmMTJiYTEyNjkyNjg3ZmQ0YmU4NDhhNzFiMGIyNWVmZjNkNDZjM2NmOTg2YTIwMTMwZWJjMDJhZmIxMTg4IiwiaWF0IjoxNjM1MDQ3MDQ0LCJuYmYiOjE2MzUwNDcwNDQsImV4cCI6MTYzNzcyOTA0NCwic3ViIjoiMTA5NDg5NzciLCJzY29wZXMiOltdfQ.QDSn0d5ANSNUWf0FouXTOal2D2v41hQbAua9nC_KMB0-GmAAKAvqbo1cnFhz7jHQiMTD_YJRvgTYHygzNSLbnXX26WPSGQzfY8072vq9alVy1mkbr2fShgEfOhOOGOzhSqURLwBCtHL0hXdyR9tDLwoBGwzO_acjcxiBC6abO-8HWxfWKNNA3VSXSSPNgMomgPwkJ9cchq-IllgJz1Q6PDX0ebTPoLYmclHRZpbGG5ulZaBrdQm0nXN91EQSHByIJ1cpkaVmn4SkoYLJkiTTIYsDRDoqCmx0FpgXyPJlOVmds4hPLm8b5o1Ld4FkZboI77MaqL0Nr8XORKpUCF4iOA";
+const REFRESH_TOKEN =
+  "def50200b52d1b3308f48387c6baa0884f065b0b249c66a9fd69cc61d0baa3a1e87c1b2fb7f73550a5ad4a0946db02f6c4eec3bf0b6dd8c32af5274d7e6e17705291500c48a1cf00a7f27187bff0c2f2c685916f4c961923cfed874b10c91d0b9cacf9fae8b619cb3d0ea80f5232ed28998a467b590a4f21138dc464b5d70bae0675954624f982dc44001691ad3ba54bfeb313b0e4adbbfbfc8de7a5af8a1ab436a43a4b7a7af17d343116f3fb06d40166f851bae607f818c7f7e991958c93b939d7001c82e779da44e1a4b095a2b53c1920abf246ed1f218fde6bb1f8f01dd386d242bd7fa0fee5a8684cc757e2663ecb9e6b56415fd6beedb9100d4172b2891c10e3cecab4cdc0d553e38467c3844ad828975d08c5693906655711b8a897c4705e089add324bfc9c222b61289d3d54f6a183624339049a37aa7063f97eaef4900fdfc3272443bc1096f0d23ec24714438c21c42f4aa961fda746bef3ec63d8a275d617d65daf22deeca49fb5b371c0e160e50c4a83fef39cb4da92daa5870754f0a72d11d66a77ea";
+
+@Injectable({
+  providedIn: "root",
+})
+export class TokenService {
+  constructor() {}
+
+  getToken(): string {
+    return ACCESS_TOKEN;
+  }
+
+  getRefreshToken(): string {
+    return REFRESH_TOKEN;
+  }
+
+  saveToken(token): void {
+    localStorage.setItem(ACCESS_TOKEN, token);
+  }
+
+  saveRefreshToken(refreshToken): void {
+    localStorage.setItem(REFRESH_TOKEN, refreshToken);
+  }
+
+  removeToken(): void {
+    localStorage.removeItem(ACCESS_TOKEN);
+  }
+
+  removeRefreshToken(): void {
+    localStorage.removeItem(REFRESH_TOKEN);
+  }
+}
