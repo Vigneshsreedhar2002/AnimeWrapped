@@ -13,6 +13,9 @@ import { ComponentsModule } from "./components/components.module";
 import { ExamplesModule } from "./examples/examples.module";
 import { IonicModule } from "@ionic/angular";
 
+
+
+
 @NgModule({
   declarations: [AppComponent, NavbarComponent, FooterComponent],
   imports: [

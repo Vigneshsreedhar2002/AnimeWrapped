@@ -3057,15 +3057,15 @@ textarea.form-control {
   padding: 30px;
   z-index: 1;
 }
-.card-register .social-line .btn {
+.card-statistics .social-line .btn {
   margin-top: 0;
 }
 
-.section-image .card-register {
+.section-image .card-statistics {
   margin-top: 0;
 }
 
-.card-register label {
+.card-statistics label {
   margin-top: 15px;
 }
 
@@ -3079,7 +3079,7 @@ textarea.form-control {
   margin-top: 30px;
 }
 
-.card-register .forgot {
+.card-statistics .forgot {
   text-align: center;
 }
 
