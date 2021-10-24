@@ -5,8 +5,7 @@ import { FormsModule } from "@angular/forms";
 import { NouisliderModule } from "ng2-nouislider";
 import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { RouterModule } from "@angular/router";
-
-import { BasicelementsComponent } from "./basicelements/basicelements.component";
+//import { IgxDoughnutChartModule } from "igniteui-angular-charts";
 import { NavigationComponent } from "./navigation/navigation.component";
 import { SignupComponent } from "./signup/signup.component";
 import { TypographyComponent } from "./typography/typography.component";
@@ -15,12 +14,11 @@ import { ComponentsComponent } from "./components.component";
 import { NotificationComponent } from "./notification/notification.component";
 import { NgbdModalComponent } from "./modal/modal.component";
 import { NgbdModalContent } from "./modal/modal.component";
-import { StatisticsComponent } from './statistics/statistics.component';
-import { VisualizationsComponent } from './visualizations/visualizations.component';
-import { DescriptionComponent } from './description/description.component';
-import { SuggestionsComponent } from './suggestions/suggestions.component';
-import { HottakesComponent } from './hottakes/hottakes.component';
-import { NewsuggestionsComponent } from './newsuggestions/newsuggestions.component';
+import { StatisticsComponent } from "./statistics/statistics.component";
+import { VisualizationsComponent } from "./visualizations/visualizations.component";
+import { SuggestionsComponent } from "./suggestions/suggestions.component";
+import { HottakesComponent } from "./hottakes/hottakes.component";
+import { NewsuggestionsComponent } from "./newsuggestions/newsuggestions.component";
 
 @NgModule({
   imports: [
@@ -33,7 +31,6 @@ import { NewsuggestionsComponent } from './newsuggestions/newsuggestions.compone
   ],
   declarations: [
     ComponentsComponent,
-    BasicelementsComponent,
     NavigationComponent,
     SignupComponent,
     TypographyComponent,
@@ -43,7 +40,6 @@ import { NewsuggestionsComponent } from './newsuggestions/newsuggestions.compone
     NgbdModalContent,
     StatisticsComponent,
     VisualizationsComponent,
-    DescriptionComponent,
     SuggestionsComponent,
     HottakesComponent,
     NewsuggestionsComponent,

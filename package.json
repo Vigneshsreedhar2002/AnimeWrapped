@@ -35,6 +35,7 @@
     "bootstrap": "4.5.3",
     "chart.js": "^3.6.0",
     "core-js": "3.8.1",
+    "igniteui-angular-charts": "^12.1.1",
     "jquery": "3.5.1",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "mdb-angular-ui-kit": "^1.4.0",

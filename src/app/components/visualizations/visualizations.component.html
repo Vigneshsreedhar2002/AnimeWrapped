@@ -1,14 +1,47 @@
 <div class="section section-buttons">
-    <div class="container">
-        <div class="tim-title">
-            <h2>Visualization</h2>
-        </div>
-        <div class="col-lg-8" style="margin: auto;">
-            <h4>Diversity Rating</h4>
-            <ngb-progressbar type="info" class="h6 mt-0" [value]="75" [striped]="true" [animated]="true" ><i>75%</i></ngb-progressbar><br>
-            <h4>Experience Rating</h4>
-            <ngb-progressbar type="info" class="h6 mt-0" [value]="25" [striped]="true" [animated]="true"><i>25%</i></ngb-progressbar><br>
-        </div>
-        
+  <div class="container">
+    <div class="tim-title">
+      <h2 style="font-weight: bold">Watch Patterns</h2>
     </div>
+    <div class="row">
+      <div class="column">
+        <img
+          src="./assets/img/donut_chart.jpeg"
+          alt="donut"
+          style="height: 95%; width: 75%"
+        />
+      </div>
+
+      <!-- <div class="col-xs-8 col-sm-7 col-md-4">
+      <img
+        url="/src/assets/img/donut_chart.jpeg"
+        class="img-rounded img-responsive"
+        alt="Rounded Image"
+        style="height: 70%"
+      />
+    </div> -->
+      <div class="column" style="margin-top: 0">
+        <div class="col-lg-8" style="margin: auto">
+          <h4>Diversity Rating</h4>
+          <ngb-progressbar
+            type="info"
+            class="h6"
+            [value]="75"
+            [striped]="true"
+            [animated]="true"
+            ><i>75%</i></ngb-progressbar
+          ><br />
+          <h4>Experience Rating</h4>
+          <ngb-progressbar
+            type="info"
+            class="h6 mt-0"
+            [value]="25"
+            [striped]="true"
+            [animated]="true"
+            ><i>25%</i></ngb-progressbar
+          ><br />
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
