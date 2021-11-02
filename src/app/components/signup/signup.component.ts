@@ -10,7 +10,6 @@ import { Component, OnInit } from "@angular/core";
 //   Validators,
 // } from "@angular/forms";
 import { Router } from "@angular/router";
-import { AuthService } from "app/auth.service";
 // import { MALClient } from '@chez14/mal-api-lite';
 
 // const malClient = new MALClient({
@@ -34,5 +33,7 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {}
 
-  login() {}
+  login() {
+    
+  }
 }
