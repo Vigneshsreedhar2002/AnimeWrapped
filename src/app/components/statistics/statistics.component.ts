@@ -7,9 +7,29 @@ import { UserDataService } from "app/services/user-data.service";
   styleUrls: ["./statistics.component.scss"],
 })
 export class StatisticsComponent implements OnInit {
-  constructor(private userDataService: UserDataService) {}
+  userName: string;
 
-  ngOnInit(): void {}
+  constructor() {}
 
-  username = this.userDataService.getUserName();
+  // constructor(private userDataService: UserDataService) {
+  //   this.userDataService.getUserData().subscribe(
+  //     (response) => {
+  //       //next() callback
+  //       console.log("response received");
+  //       this.userName = response.name;
+  //     },
+  //     (error) => {
+  //       //error() callback
+  //       console.error("Request failed with error");
+  //     },
+  //     () => {
+  //       //complete() callback
+  //       console.error("Request completed");
+  //     }
+  //   );
+  // }
+
+  ngOnInit(): void {
+    
+  }
 }

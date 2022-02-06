@@ -14,15 +14,16 @@ const code_challenge = generateCodeChallenge(128);
 module.exports = {
   // ports
   clientPort: 4200,
-  serverPort: 3000,
+  serverPort: 8080,
 
   // api keys
   clientID: "fee7be08888b1e9b9e14365d460e6fdb",
   clientSecret:
     "15b997ea791d430a3bc829cb19e96771d044fc1c68417613e69c542bb1694f48",
   codeChallenge: code_challenge,
-  token: "",
+  access_token: "",
+  refresh_token: "",
   apiURL: "https://myanimelist.net/v1/oauth2/authorize",
-  redirectURI: "http://localhost:4200",
+  redirectURI: "http://localhost:8080/callback",
   stateKey: "mal_auth_state",
 };

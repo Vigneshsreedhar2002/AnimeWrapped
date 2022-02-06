@@ -29,7 +29,7 @@ app.use(
 );
 
 app.use("/login", require("./routes/login"));
-app.use("/oauth-callback", require("./routes/oauth-callback"));
+app.use("/callback", require("./routes/oauth-callback"));
 app.use("/logout", require("./routes/logout"));
 app.use("/user", require("./routes/user"));
 

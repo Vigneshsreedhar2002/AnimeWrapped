@@ -1,10 +1,10 @@
 {
-  "name": "paper-kit-2-angular",
+  "name": "anime-wrapped",
   "version": "1.4.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/creativetimofficial/pk2-angular.git"
+    "url": "https://github.com/Vigneshsreedhar2002/AnimeWrapped"
   },
   "scripts": {
     "ng": "ng",
@@ -35,6 +35,7 @@
     "angular-google-charts": "^2.2.2",
     "bootstrap": "4.5.3",
     "chart.js": "^3.6.0",
+    "cookie-parser": "^1.4.5",
     "core-js": "3.8.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",

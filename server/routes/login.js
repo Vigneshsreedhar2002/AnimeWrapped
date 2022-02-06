@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const config = require("../config");
+const request = require("request");
 
 router.get("/", (req, res) => {
   console.log("get");
@@ -9,4 +10,4 @@ router.get("/", (req, res) => {
   );
 });
 
-https: module.exports = router;
+module.exports = router;
